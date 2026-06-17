@@ -4,7 +4,7 @@ figure = input("scegli una figura geometrica tra quadrato, cerchio o rettangolo:
 while True:
     if figure == "quadrato":
         lato = float(input("inserisci la lunghezza del lato del quadrato: "))
-        perimetro = 4 * lato
+        perimetro = lato * 4
         print("il perimetro del quadrato è: " + str(perimetro))
 
     elif figure == "cerchio":
@@ -15,7 +15,7 @@ while True:
     elif figure == "rettangolo":
         base = float(input("inserisci la base del rettangolo: "))
         altezza = float(input("inserisci l'altezza del rettangolo: "))
-        perimetro = 2 * (base + altezza)
+        perimetro = (base + altezza) * 2
         print("il perimetro del rettangolo è: " + str(perimetro))
 
     else: print("figura geometrica non valida")
